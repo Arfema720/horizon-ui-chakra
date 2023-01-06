@@ -53,7 +53,7 @@ export default function SidebarDocs() {
           textAlign='center'
           px='10px'
           mb='14px'>
-          Upgrade to PRO
+          
         </Text>
         <Text
           fontSize='14px'
@@ -61,23 +61,11 @@ export default function SidebarDocs() {
           px='10px'
           mb='14px'
           textAlign='center'>
-          Improve your development process and start doing more with Horizon UI
-          PRO!
+          
         </Text>
       </Flex>
       <Link href='https://horizon-ui.com/pro'>
-        <Button
-          bg='whiteAlpha.300'
-          _hover={{ bg: "whiteAlpha.200" }}
-          _active={{ bg: "whiteAlpha.100" }}
-          mb={{ sm: "16px", xl: "24px" }}
-          color={"white"}
-          fontWeight='regular'
-          fontSize='sm'
-          minW='185px'
-          mx='auto'>
-          Upgrade to PRO
-        </Button>
+
       </Link>
     </Flex>
   );

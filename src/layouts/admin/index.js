@@ -8,9 +8,11 @@ import { SidebarContext } from "contexts/SidebarContext";
 import React, { useState } from "react";
 import { Redirect, Route, Switch } from "react-router-dom";
 import routes from "routes.js";
+// eslint-disable-next-line
+import { useColorMode } from "@chakra-ui/react";
 
 // Custom Chakra theme
-export default function Dashboard(props) {
+export default function Dashboard(props) { 
   const { ...rest } = props;
   // states and functions
   const [fixed] = useState(false);
@@ -20,7 +22,11 @@ export default function Dashboard(props) {
     return window.location.pathname !== "/admin/full-screen-maps";
   };
   const getActiveRoute = (routes) => {
-    let activeRoute = "Default Brand Text";
+  let activeRoute = "Default Brand Text";
+
+
+
+
     for (let i = 0; i < routes.length; i++) {
       if (routes[i].collapse) {
         let collapseActiveRoute = getActiveRoute(routes[i].items);
